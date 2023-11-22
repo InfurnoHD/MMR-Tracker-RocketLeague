@@ -1,7 +1,32 @@
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
-    Arial, sans-serif;
-  margin: auto;
-  max-width: 38rem;
-  padding: 2rem;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  margin: 0; /* Remove margin */
+  padding: 0; /* Remove padding */
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  flex-direction: column;
+}
+
+
+#container {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+}
+
+#input-section {
+  /* Adjust the size or add padding/margin as needed */
+  z-index: 1; /* Ensure it's above the chart */
+}
+
+#graph-section {
+  flex-grow: 1; /* This will make the graph section fill the remaining space */
+  flex-shrink: 1;
+}
+
+#mmr-graph {
+  position: absolute;
+  width: 100%; /* Full width of the container */
+  height: 100vh; /* Full height of the container */
 }

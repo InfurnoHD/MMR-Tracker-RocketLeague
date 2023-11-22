@@ -1,12 +1,21 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <meta charset="UTF-8" />
-    <title>Hello World!</title>
+    <title>Rocket League MMR Tracker</title>
     <link rel="stylesheet" href="index.css" />
-  </head>
-  <body>
-    <h1>💖 Hello World!</h1>
-    <p>Welcome to your Electron application.</p>
-  </body>
+</head>
+<body>
+<div id="container">
+    <div id="input-section">
+        <input type="number" id="mmr-input" placeholder="Enter MMR" />
+        <button id="add-mmr">Add MMR</button>
+        <button id="undo">Undo</button>
+    </div>
+    <div id="graph-section">
+        <canvas id="mmr-graph"></canvas> <!-- Chart.js will render the graph here -->
+    </div>
+</div>
+<script src="renderer.js"></script>
+</body>
 </html>

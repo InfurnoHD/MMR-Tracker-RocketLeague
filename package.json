@@ -18,7 +18,12 @@
   },
   "license": "MIT",
   "dependencies": {
-    "electron-squirrel-startup": "^1.0.0"
+    "chart.js": "^4.4.0",
+    "chartjs-adapter-date-fns": "^3.0.0",
+    "chartjs-adapter-moment": "^1.0.1",
+    "electron-squirrel-startup": "^1.0.0",
+    "moment": "^2.29.4",
+    "sqlite3": "^5.1.6"
   },
   "devDependencies": {
     "@electron-forge/cli": "^7.1.0",
